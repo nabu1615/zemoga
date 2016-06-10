@@ -6161,7 +6161,7 @@ button.close {
 .footer {
   background-color: #ebebeb;
   color: white;
-  font-family: "Roboto Condensed", sans-serif; }
+  font-family: "Hammersmith One", sans-serif; }
   @media screen and (min-width: 768px) {
     .footer {
       padding: 1.875em 0; } }
@@ -6175,7 +6175,8 @@ button.close {
   .footer .item {
     float: left;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif; }
     @media screen and (min-width: 768px) {
       .footer .item {
         text-align: left;
@@ -6184,13 +6185,14 @@ button.close {
     .footer .item .title {
       text-transform: uppercase;
       padding: 0.25em 0;
-      color: #337ab7;
+      color: #00aedb;
       font-size: 1.25em;
       font-weight: 500;
       width: 100%;
       text-transform: capitalize;
       display: inline-block;
-      padding: 0.3125em 0; }
+      padding: 0.3125em 0;
+      font-family: "Hammersmith One", sans-serif; }
       @media screen and (min-width: 768px) {
         .footer .item .title {
           padding-bottom: 0.625em;
@@ -8287,11 +8289,11 @@ header {
       .nav-bar .nav-bar-item {
         display: inline-block; } }
     .nav-bar .nav-bar-item .is-selected .nav-bar-target {
-      background-color: #00aedb;
-      color: white;
-      text-transform: capitalize; }
+      background-color: rgba(238, 238, 238, 0.8);
+      color: #337ab7;
+      text-transform: uppercase; }
       .nav-bar .nav-bar-item .is-selected .nav-bar-target:hover {
-        color: rgba(0, 0, 0, 0.6);
+        color: white;
         background-color: rgba(0, 174, 219, 0.8); }
     .nav-bar .nav-bar-item .nav-bar-target {
       display: block;
@@ -8321,9 +8323,9 @@ header {
       z-index: 9;
       right: 0; }
       .nav-bar-subnav .nav-bar-item {
-        width: 130%;
+        width: 150%;
         font-size: 0.875em;
-        margin-bottom: 1px; } }
+        text-align: left; } }
 
 .sr-only {
   position: absolute;
@@ -8347,7 +8349,7 @@ header {
 .features {
   background-color: #004964;
   color: white;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   padding: 1.25em 0; }
 
 .features-nav-item {

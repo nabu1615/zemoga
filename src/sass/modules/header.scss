@@ -103,11 +103,11 @@ header {
         }
 
         .is-selected .nav-bar-target {
-            background-color: $navColor;
-            color: $white;
-            text-transform: capitalize;
+            background-color: rgba(238, 238, 238, 0.8);
+            color: $linkColor;
+            text-transform: uppercase;
             &:hover {
-                color: rgba($black, .6);
+                color: $white;
                 background-color: rgba($navColor, .8);
             }
         }
@@ -147,9 +147,9 @@ header {
         z-index: 9;
         right: 0;
         .nav-bar-item {
-            width: 130%;
+            width: 150%;
             font-size: em(14);
-            margin-bottom: 1px;
+            text-align: left;
         }
     }
 }

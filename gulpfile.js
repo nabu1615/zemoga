@@ -18,10 +18,10 @@ var gulp = require('gulp'),
 	//Live Reload
 
 	liveReload = require('gulp-livereload'),
-	
+
 	dest = require('gulp-dest'),
-    notify = require("gulp-notify") 
-    bower = require('gulp-bower');
+    notify = require("gulp-notify"), 
+    bower = require('gulp-bower'),
 	uglify = require ('gulp-uglify'),
 	browserify = require('gulp-browserify'),
 	streamify = require('gulp-streamify');
@@ -68,7 +68,7 @@ gulp.task('fonts', function(){
 		.pipe(gulp.dest('builds/output/fonts/'))
 	})
 
-//Server 
+//Server
 
 gulp.task('connect', function(){
 	gulpConnect.server({

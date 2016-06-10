@@ -80,11 +80,11 @@ header {
       .nav-bar .nav-bar-item {
         display: inline-block; } }
     .nav-bar .nav-bar-item .is-selected .nav-bar-target {
-      background-color: #00aedb;
-      color: white;
-      text-transform: capitalize; }
+      background-color: rgba(238, 238, 238, 0.8);
+      color: #337ab7;
+      text-transform: uppercase; }
       .nav-bar .nav-bar-item .is-selected .nav-bar-target:hover {
-        color: rgba(0, 0, 0, 0.6);
+        color: white;
         background-color: rgba(0, 174, 219, 0.8); }
     .nav-bar .nav-bar-item .nav-bar-target {
       display: block;
@@ -114,9 +114,9 @@ header {
       z-index: 9;
       right: 0; }
       .nav-bar-subnav .nav-bar-item {
-        width: 130%;
+        width: 150%;
         font-size: 0.875em;
-        margin-bottom: 1px; } }
+        text-align: left; } }
 
 .sr-only {
   position: absolute;

@@ -3,7 +3,7 @@
 .footer {
 	background-color: $footerColor;
 	color: white;
-	font-family: $secondFont;
+	font-family: $mainFont;
 	@media screen and (min-width: $break-medium) {
 		padding: em(30) 0;
 	}
@@ -21,6 +21,7 @@
 		float: left;
 		width: 100%;
 		text-align: center;
+		font-family: $secondFont;
 		@media screen and (min-width: $break-medium) {
 			text-align: left;
 			width: 16.66666667%;
@@ -30,13 +31,14 @@
 		.title {
 			text-transform: uppercase;
 			padding: em(4) 0;
-			color: $linkColor;
+			color: $navColor;
 			font-size: em(20);
 			font-weight: 500;
 			width: 100%;
 			text-transform: capitalize;
 			display: inline-block;
 			padding: em(5) 0;
+			font-family: $mainFont;
 			@media screen and (min-width: $break-medium) {
 				padding-bottom: em(10);
 				margin-bottom: em(10);
