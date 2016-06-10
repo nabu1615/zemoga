@@ -1,0 +1,180 @@
+@import 'variables';
+
+
+header {
+    padding-top: em(20);
+}
+
+.header-search {
+    margin-top: em(15);
+    font-family: $secondFont;
+}
+
+.header-search-icon {
+    position: relative;
+    color: white;
+    background-color: #ec4399;
+    top: 1px;
+    right: 4px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+        color: $white;
+        opacity: .7;
+    }
+
+    .fa-search {
+        left: 5px;
+        top: 2px;
+        position: relative;
+    }
+}
+
+.header-search-form, .header-search-icon {
+    float: left;
+}
+
+.header-search-input {
+    border-color: transparent;
+    position: relative;
+    background: #eeeeee;
+    color: #004964;
+    width: 174px;
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    position: relative;
+    min-height: 50px;
+    border: 1px solid transparent;
+
+    .nav-bar-logo {
+        float: left;
+        width: 225px;
+        height: 51px;
+        background-image: url('../images/fpo/general-sprites.png');
+        background-position: -5px -38px;
+    }
+
+    .nav-bar-list {
+        display: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: em(20);
+        margin: 0;
+
+        @media screen and (min-width: $break-medium) {
+            display: inline-block;
+            width: auto;
+            float: right;
+            margin-right: em(15);
+            padding-top: em(8);
+        }
+    }
+
+    .nav-bar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin: 10px 5px 0 0;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: $navColor;
+
+        @media screen and (min-width: $break-medium) {
+            display: none;
+        }
+    }
+
+    .nav-bar-item {
+        list-style: none;
+        background-color: rgba($grayNav, .5);
+        border-color: $linkColor;
+        position: relative;
+
+        @media screen and (min-width: $break-medium) {
+            display: inline-block;
+        }
+
+        .is-selected .nav-bar-target {
+            background-color: $navColor;
+            color: $white;
+            text-transform: capitalize;
+            &:hover {
+                color: rgba($black, .6);
+                background-color: rgba($navColor, .8);
+            }
+        }
+
+        .nav-bar-target {
+            display: block;
+            text-transform: uppercase;
+            padding: em(10) 0;
+            @media screen and (min-width: $break-medium) {
+                background-color: $white;
+                padding: em(10) em(20);
+                font-size: em(18);
+                color: $linkColor;
+            }
+
+            &:hover {
+                text-decoration: none;
+                background-color: rgba($grayNav, .5);
+            }
+        }
+
+        .drop-down-toogle {
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav-bar-subnav {
+    padding: 0;
+    display: none;
+    width: 100%;
+    @media screen and (min-width: $break-medium) {
+        position: absolute;
+        z-index: 9;
+        right: 0;
+        .nav-bar-item {
+            width: 130%;
+            font-size: em(14);
+            margin-bottom: 1px;
+        }
+    }
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $white;
+
+    + .icon-bar {
+        margin-top: 4px;
+    }
+}

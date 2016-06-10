@@ -1,0 +1,29 @@
+header.header
+    nav.nav-bar
+        .container
+            a(href="/").nav-bar-logo
+            .header-search.pull-right
+                form(action="/search").header-search-form.hide-s
+                    input(type="search" placeholder="Type to search").header-search-input
+                a.header-search-icon.hide-s
+                    span.fa.fa-search
+            .nav-bar-header
+                button(type="button").nav-bar-toggle
+                    span.sr-only Navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                ul.nav-bar-list
+                    li.drop-down.nav-bar-item
+                        a(href="").drop-down-toogle.nav-bar-target Services
+                        ul.nav-bar-subnav
+                            li.nav-bar-item.is-selected
+                                a(href="").nav-bar-target User experience
+                            li.nav-bar-item.is-selected
+                                a(href="").nav-bar-target graphic design
+                            li.nav-bar-item.is-selected
+                                a(href="").nav-bar-target development
+                    li.nav-bar-item.first
+                        a.nav-bar-target(href="") Software
+                    li.nav-bar-item.last
+                        a.nav-bar-target(href="") Connect with us

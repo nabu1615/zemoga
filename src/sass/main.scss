@@ -1,0 +1,175 @@
+@import 'modules/variables',
+		'modules/reset-grid',
+		'modules/footer',
+		'modules/font-awesome',
+		'modules/header',
+		'modules/features',
+		'modules/items',
+		'modules/slide',
+		'modules/home';
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.show {
+  margin-top: 0!important; /* to overide inline style */
+}
+
+.opacity {
+	&:hover {
+		opacity: .5;
+	}
+}
+
+
+.flex {
+	display: flex;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.animated {
+  transition: all 200ms ease-in;
+}
+
+.f-right {
+	float: right;
+}
+
+.wrapper-right {
+	display: block;
+	text-align: right;
+}
+
+.tac {
+	text-align: center;
+}
+
+.radio {
+	appearance: radio;
+	display: inline-block !important;
+	border: none;
+	width: auto;
+	box-shadow: none;
+}
+
+.main-button {
+	width: 100%;
+	display: inline-block;
+	padding: em(15) 0;
+	margin-bottom: em(15);
+	text-align: center;
+	color: $white;
+	font-size: em(14);
+	&:hover {
+		color: $white;
+		opacity: .9;
+	}
+}
+
+
+
+body {
+	font-family: $mainFont;
+}
+
+a {
+	text-decoration: none;
+	color: $mainColor;
+
+	&:hover {
+		color: $linkColor;
+	}
+}
+
+fieldset {
+	width: 100%;
+	display: inline-block;
+}
+
+input, textarea {
+	width: 100%;
+	padding: em(12) em(5);
+	display: inline-block;
+	border-radius: 0;
+	appearance: initial;
+	font-size: em(14);
+	background-color: #F6F6F6;
+	border: 1px solid rgba($textColor, .2);
+	box-shadow: 0px 1px 0px rgba($textColor, .4);
+	color: $textColor;
+	box-sizing: border-box;
+}
+
+.select {
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 25px;
+		height: 11px;
+		background-image: url("../images/fpo/select.svg");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		float: left;
+		position: absolute;
+		right: 5px;
+		top: 15px;
+	}
+}
+
+select {
+	width: 100%;
+	padding: em(12) em(5);
+	appearance: none;
+	font-size: em(14);
+	border: 1px solid rgba($textColor, .2);
+	border-radius: 0;
+	color: $textColor;
+}
+
+input::placeholder {
+	color: $textColor;
+}
+
+.hide-s {
+	display: none;
+	@media screen and (min-width: $break-medium) {
+		display: block;
+	}
+}
+
+.hide-m {
+	display: block;
+	@media screen and (min-width: $break-medium) {
+		display:none;
+	}
+}
+
+.change {
+	&:hover {
+		opacity: .6;
+		transition: all ease-in-out .5s;
+	}
+}
+
+.btn {
+	background: $linkColor;
+	border: 0;
+	margin: em(5) 0;
+	color: $white;
+	padding: em(10);
+	border-radius: 5px;
+	font-size: em(12);
+	cursor: pointer;
+	font-family: $mainFont;
+	&:hover {
+		opacity: .7;
+	}
+}
+

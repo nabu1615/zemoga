@@ -1,0 +1,82 @@
+@import 'variables';
+
+.features {
+    background-color: $featuresColor;
+    color: $white;
+    font-family: $secondFont;
+    padding: em(20) 0;
+}
+
+
+.features-nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: em(5) em(10);
+    @media screen and (min-width: $break-medium) {
+        margin-top: em(5);
+    }
+
+    .features-nav-target {
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.features-nav {
+    @media screen and (min-width: $break-medium) {
+        position: relative;
+        top: 3px;
+    }
+}
+
+.features-social {
+    @media screen and (min-width: $break-medium) {
+        margin-bottom: 0;
+        position: relative;
+        top: 3px;
+    }
+}
+
+
+.features-social-item {
+    list-style: none;
+    display: inline-block;
+    padding: em(5);
+}
+
+.features-item-target {
+    background-image: url('../images/fpo/general-sprites.png');
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+}
+
+.features-social-first {
+    padding-top: 0;
+    position: relative;
+    bottom: 5px;
+}
+
+.twitter{
+    background-position: -137px -5px;
+}
+
+.facebook{
+    background-position: -5px -5px;
+}
+
+.youtube{
+    background-position: -170px -5px;
+}
+.linkedin{
+    background-position: -71px -5px;
+}
+.rss {
+    background-position: -104px -5px;
+}
+.google {
+    background-position: -38px -5px;
+}

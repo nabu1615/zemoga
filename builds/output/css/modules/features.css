@@ -1,0 +1,63 @@
+.features {
+  background-color: #004964;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 1.25em 0; }
+
+.features-nav-item {
+  list-style: none;
+  display: inline-block;
+  padding: 0.3125em 0.625em; }
+  @media screen and (min-width: 768px) {
+    .features-nav-item {
+      margin-top: 0.3125em; } }
+  .features-nav-item .features-nav-target {
+    color: white;
+    text-transform: uppercase; }
+    .features-nav-item .features-nav-target:hover {
+      text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  .features-nav {
+    position: relative;
+    top: 3px; } }
+
+@media screen and (min-width: 768px) {
+  .features-social {
+    margin-bottom: 0;
+    position: relative;
+    top: 3px; } }
+
+.features-social-item {
+  list-style: none;
+  display: inline-block;
+  padding: 0.3125em; }
+
+.features-item-target {
+  background-image: url("../images/fpo/general-sprites.png");
+  width: 23px;
+  height: 23px;
+  display: inline-block; }
+
+.features-social-first {
+  padding-top: 0;
+  position: relative;
+  bottom: 5px; }
+
+.twitter {
+  background-position: -137px -5px; }
+
+.facebook {
+  background-position: -5px -5px; }
+
+.youtube {
+  background-position: -170px -5px; }
+
+.linkedin {
+  background-position: -71px -5px; }
+
+.rss {
+  background-position: -104px -5px; }
+
+.google {
+  background-position: -38px -5px; }

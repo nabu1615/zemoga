@@ -1,0 +1,112 @@
+.slide-home {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  float: left;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .slide-home {
+      height: auto; } }
+
+.slide-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none; }
+
+/* slide-visible class must to be after slide-item */
+.slide-visible {
+  display: block; }
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  display: inline-block; }
+
+.slide-button {
+  position: absolute;
+  top: 35%;
+  z-index: 2;
+  background-image: url("../images/fpo/general-sprites.png");
+  cursor: pointer;
+  text-indent: -9999px; }
+  @media screen and (min-width: 768px) {
+    .slide-button {
+      top: 40%; } }
+  .slide-button:hover {
+    opacity: 0.4; }
+
+#button-prev {
+  left: 10px;
+  right: auto;
+  width: 41px;
+  height: 67px;
+  background-position: -116px -99px; }
+  @media screen and (min-width: 768px) {
+    #button-prev {
+      left: -50px; } }
+
+#button-next {
+  right: 10px;
+  left: auto;
+  width: 41px;
+  height: 67px;
+  background-position: -65px -99px; }
+  @media screen and (min-width: 768px) {
+    #button-next {
+      right: -50px; } }
+
+.slide-item-image {
+  width: 100%;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .slide-item-image {
+      display: block; } }
+
+.slide-home-caption {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  text-align: center;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .slide-home-caption {
+      text-align: right; } }
+  .slide-home-caption .slide-item-first {
+    font-size: 2.1875em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #00aedb;
+    line-height: 50%; }
+    @media screen and (min-width: 768px) {
+      .slide-home-caption .slide-item-first {
+        font-size: 3.5em; } }
+  .slide-home-caption .slide-item-second {
+    font-size: 2.625em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 768px) {
+      .slide-home-caption .slide-item-second {
+        font-size: 3.875em; } }
+  .slide-home-caption > .slide-text {
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 100%;
+    color: #00aedb; }
+  .slide-home-caption .button {
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    background: #ee269d;
+    /* Old browsers */ }
+
+.slide-item-icon {
+  position: relative;
+  left: 10px; }

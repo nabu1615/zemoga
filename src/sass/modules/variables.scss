@@ -1,0 +1,28 @@
+$mainColor: #2B2C39;
+$linkColor: #337ab7;
+$grayNav: #eee;
+$footerColor: #252D30;
+$textColor: #6B6B6B;
+$navColor:  #00aedb;
+$footerColor: #ebebeb;
+$featuresColor: #004964;
+$catalogButton: #A7A5A5;
+$black: black;
+$white: white;
+$mainFont: 'Hammersmith One', sans-serif;
+$secondFont: 'Roboto Condensed', sans-serif;
+
+
+//Break Points
+
+$break-desktop:992px;
+$break-padding:1015px;
+$break-medium: 768px;
+
+//Mixins
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
