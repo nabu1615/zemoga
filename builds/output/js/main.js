@@ -1,7 +1,12 @@
-var app = app || {};
+var app = app || {}; // set namespace
 
-app.lib = (function () {
+app.lib = (function () { // set lib for reusable functions
     var lib = {};
+
+    /**
+        * fadeIn function to show an element(el) with a opacity transition
+        * @param {HTMLElement} el
+    */
 
     lib.fadeIn = function(el) {
       el.style.opacity = 0;
@@ -19,6 +24,11 @@ app.lib = (function () {
       tick();
     }
 
+    /**
+        * toggleVisibility function to show or hide an element(item)
+        * @param {HTMLElement} item
+    */
+
     lib.toggleVisibility = function(item) {
         if (item.style.display !== "inline-block") {
             item.style.display = "inline-block";
@@ -31,14 +41,18 @@ app.lib = (function () {
     return lib;
 })();
 
-app.slide = (function () {
-        var settings;
+app.slide = (function () { // set slide like an app attribute
+        var settings; // create settings variable
 
-        function handleControlClick(e) {
+        // handleControlClick function to control the next slide behavior
+
+        function handleControlClick() {
             var activeIndex = getIndex(),
                 nextActiveIndex = getNextIndex(this, activeIndex);
             setNextActiveSlide(nextActiveIndex);
         }
+
+        // * getIndex function to get the index position when the user click on the next or prev button
 
         function getIndex() {
             var index = 0;
@@ -51,6 +65,13 @@ app.slide = (function () {
             return index;
         }
 
+        /**
+            * getNextIndex function to get the right activeIndex when the user click on the next or prev button
+            * @param {HTMLElement} e
+            * @param {number} activeIndex
+            * @returns activeIndex
+        */
+
 
         function getNextIndex(e, activeIndex) {
             var isNext = e.classList.contains(settings.classes.next);
@@ -62,6 +83,12 @@ app.slide = (function () {
         }
 
 
+        /**
+            * setNextActiveSlide function to add or remove the slideVisible css class
+            * @param {number} nextActiveIndex
+        */
+
+
         function setNextActiveSlide(nextActiveIndex) {
             var activeClass = settings.nodelist.slideVisible,
                 currentClass = activeClass[0],
@@ -70,6 +97,8 @@ app.slide = (function () {
             app.lib.fadeIn(slideId);
             slideId.classList.add(settings.classes.slideVisible);
         }
+
+        // initialize function to define settings and "initialize" the slide module
 
         function initialize() {
             settings = {
@@ -96,9 +125,11 @@ app.slide = (function () {
         };
 })();
 
-app.nav = (function () {
+app.nav = (function () { // set nav like an app attribute
 
-        var settings;
+        var settings; // create settings variable
+
+        // hideNavResize function to remove inline styles for the nav when resize event is launched
 
         function hideNavResize() {
             var w = window.innerWidth;
@@ -106,6 +137,8 @@ app.nav = (function () {
                 settings.nodelist.nav[0].removeAttribute('style');
             }
         }
+
+        // initialize function to define settings and "initialize" the nav module
 
         function initialize() {
             settings = {
